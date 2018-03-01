@@ -1,0 +1,130 @@
+
+body {
+    margin: 0;
+    background: lightgray;
+}
+
+/* Header */
+.header {
+    background: #fff;
+}
+
+.header .alpha {
+    display: inline-block;
+    width: 50%;
+}
+
+.header .alpha h1 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #26a69a;
+    padding: 3%;
+}
+
+.header .omega {
+    display: inline-block;
+    width: 45%;
+}
+
+.header .omega li {
+    display: inline;
+    margin: 0 5%;
+}
+
+h1, h2 {
+    color: #26a69a;
+    border-bottom: 2px solid gray;
+}
+
+.header h1 {
+    border-bottom: none;
+    color: #fff;
+}
+
+.main .alpha img {
+    width: 100%;
+}
+
+.main .omega img {
+    width: 32px;
+}
+
+.main .alpha, .main .omega {
+    float: left;
+    display: inline;
+    width: 30%;
+    background: #fff;
+    padding: 0 3%;
+    margin: 3% 5%;
+}
+
+.image-banner {
+    position: relative;
+}
+
+.text-banner {
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background: #26a69a;
+    padding: 2% 0;
+}
+
+input {
+    margin: 5% 0;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    float: left; 
+    text-align: center;
+    background:#333;
+    color: #fff;
+    border-top: 3px solid #26a69a;
+}
+
+
+@media (max-width: 768px) {
+
+    .header .alpha h1 {
+        width: 80%;
+    }
+
+    .main .alpha {
+        width: 85%;
+    }
+
+    .main .alpha img.cat {
+        width: 50%;
+        float: left;
+        padding: 2%;
+    }
+
+    .image-banner {
+        position: relative;
+        float: left;
+        width: 45%;
+        margin: 1%
+    }
+
+
+}
+
+@media (max-width: 640px) {
+
+    .image-banner {
+        width: 100%;
+    }
+
+    .main .alpha img.cat {
+        width: 100%;
+    }
+
+    .main .omega {width: 85%;}
+
+}
